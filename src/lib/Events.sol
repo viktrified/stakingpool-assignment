@@ -2,6 +2,7 @@
 pragma solidity ^0.8.13;
 
 library Events {
-event Staked(address staker, uint amount);
-event Unstaked(address staker, uint amount);
+    event PoolCreated(address token, uint rewardPercentage);
+    event Staked(address staker, uint amount);
+    event Unstaked(address staker, uint amount, uint reward);
 }
